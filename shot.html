@@ -1,0 +1,65 @@
+<!--
+<?php
+  // if(isset($_COOKIE['lang']) or empty($_COOKIE['lang']))      
+      setcookie('lang', 'fr', time()+3600*24*365, null, null, false, true);
+
+ ?>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="shoy.css"> 
+    	<style>
+    	 body{ padding:10px;}
+        .header, main {margin-bottom: 50px;}
+    	input{margin-bottom:20px;}
+        .submit{color: #FFF ; background-color: #0000FF; }
+        .blue{color:#0000FF;}
+        .green{color:#00FF00;}
+        .size{font-size:30px;}
+        .underline {text-decoration:underline;}
+ </style>
+</head>
+<body>
+  <header class="header">
+  	 <h1> Java Script Le language du web ! </h1>
+  </header>
+  
+  <main >
+  	<p id="paraf" > Le Java Script: est l'un des language de programmation
+  créer dans les années 1970. 
+  il est très connu et utilisé pour le développement web.
+  on peut l'utiliser côté client ou côté serveur.
+  C'est un langage basé sur le paradigme des prototypes.
+  </p>
+    
+   <!-- Langue utilisateur: <?= htmlspecialchars($_COOKIE['lang']) ?> -->
+  
+  <form method ="post" action = "#" id="idform"
+name = "user-form" >
+  	<label for="idname" > Nom : </label><input id="idname" type="text" name ="username" > </input> <br>
+       
+       <label for ="idphone"> Téléphone : </label><input id="idphone" type="telephone" name ="userphone" > </input> <br>
+       
+       <input class="submit" id="idsubmit" type="submit" name ="usersubmit" value="submit"> </input>
+  	
+  </form>
+    
+<button class="button1" > Klike la pou aktive tèm sonb </button>
+
+<button class="button2" > Klike la pou dezaktive tèm sonb</button>
+  
+</main>
+  
+    
+ 
+  
+ <footer>
+ 	<div class="copyright"> &copy;  copyright : tout droit réservé.</div>
+ </footer>
+  <script src="shot.js">
+    </script>
+</body>
+</html>
